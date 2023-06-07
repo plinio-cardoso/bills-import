@@ -2,6 +2,7 @@ services:
   nginx:
     image: nginx:1.19.7
     container_name: bills-nginx
+    restart: unless-stopped
     ports:
       - "8089:80"
     volumes:
@@ -17,6 +18,7 @@ services:
       context: docker
       dockerfile: Dockerfile
     container_name: bills-php
+    restart: unless-stopped
     volumes:
       - ./:/var/www/html:cached
     networks:
