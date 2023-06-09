@@ -9,7 +9,7 @@ class Converter
     private ImportStatus $importStatus = ImportStatus::STOPPED;
 
     private array $categoryMapping = [
-        'Refeição' => [
+        'Refeicao' => [
             'iFood',
             'Panificadora',
             'Padoka',
@@ -43,7 +43,7 @@ class Converter
         'Beleza' => [
             'BARBEARIA',
         ],
-        'Saúde' => [
+        'Saude' => [
             'FARMACIA',
             'RAIA',
         ],
