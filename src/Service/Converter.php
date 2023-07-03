@@ -10,6 +10,10 @@ class Converter
 
     private array $categoryMapping = [
         'Refeicao' => [
+            'IFD BR',
+            'ESPETINHOS',
+            'BODEGA',
+            'GALPAO DA COSTELA',
             'iFood',
             'Panificadora',
             'Padoka',
@@ -45,6 +49,8 @@ class Converter
         ],
         'Saude' => [
             'FARMACIA',
+            'DROGASIL',
+            'DROGARIA',
             'RAIA',
         ],
         'Esporte' => [
@@ -55,7 +61,8 @@ class Converter
         ],
         'Supermercado' => [
             'MUFFATO',
-            'SUPERMERCADOS',
+            'SUPERMERCADO',
+            'CANCAO LONDRINA'
         ],
         'Telefone / Internet' => [
             'VIVO'
