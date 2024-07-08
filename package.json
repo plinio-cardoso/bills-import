@@ -12,6 +12,7 @@
     "build": "encore production --progress"
   },
   "dependencies": {
-    "@symfony/webpack-encore": "^4.3.0"
+    "@symfony/webpack-encore": "^4.3.0",
+    "jquery": "^3.7.1"
   }
 }
