@@ -20,7 +20,8 @@ class AIService
             Tipo de Pagamento deve ter valor padrao de "cartao" se nao for especificado nenhum cartao, sem acentuação
             Pago deve ter valor padrao de "true" se nao for especificado
             Obs: quando ditado alguma regra ela deve valer para todas linhas sem excessão, as regras serao ditas na primeira linha dos dados, as regras podem ser somente banco, pagas ou nao, credito ou debito,
-            podem conter outros inputs mais humanos como recorrencia, etc
+            podem conter outros inputs mais humanos como recorrencia, etc.
+            Obs 2: Remover vírgulas do nome e substituir por espaço
             
             Dados:
              %s
