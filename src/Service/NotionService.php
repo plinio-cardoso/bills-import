@@ -32,10 +32,16 @@ class NotionService
             'LANCHONETE',
             'LUMBERJACK',
         ],
+        // Casa
+        'f64dfbeb6d55453fad3c9fac917ecde6' => [
+            'Home Assistant'
+        ],
         // Entretenimento
         '94b87be263684caca26fa0cafba26194' => [
             'Youtube',
-            'Spotify'
+            'Spotify',
+            'Netflix',
+            'Home Assistant'
         ],
         // Trabalho Plinio
         '12b7dd6faeab42d39253a048d4ed5541' => [
@@ -71,7 +77,6 @@ class NotionService
         ],
         // Lazer
         'c8cab024cdb6476dba12b30396c54ba8' => [
-            'Netflix',
             'Hotel'
         ],
         // Mercado
