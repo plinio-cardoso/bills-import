@@ -32,8 +32,19 @@ class NotionService
             'LANCHONETE',
             'LUMBERJACK',
         ],
+        // Entretenimento
+        '94b87be263684caca26fa0cafba26194' => [
+            'Youtube',
+            'Spotify'
+        ],
+        // Trabalho Plinio
+        '12b7dd6faeab42d39253a048d4ed5541' => [
+            'Linkedin',
+            'Github',
+        ],
         // Transporte
         '114a72acbeea4227824a7abc79ae4eaf' => [
+            'Liberty',
             'Posto',
             'PRADO MULTIMARCAS',
             'TIRESHOP',
@@ -51,7 +62,7 @@ class NotionService
         '4ef02c949996441a958bde40ef93fb11' => [
             'BARBEARIA',
         ],
-        // Sauúde
+        // Saúde
         'cc937996354b4e2e91768ba4167fbc5d' => [
             'FARMACIA',
             'DROGASIL',
@@ -61,6 +72,7 @@ class NotionService
         // Lazer
         'c8cab024cdb6476dba12b30396c54ba8' => [
             'Netflix',
+            'Hotel'
         ],
         // Mercado
         'b7e6b6d8a86f4768a90d377ac1247885' => [
