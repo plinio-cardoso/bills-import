@@ -7,6 +7,7 @@ use Symfony\Component\HttpClient\HttpClient;
 class NotionService
 {
     const DEFAULT_CATEGORY_ID = '8995e5c0611c4e92b08384352d1fc187';
+    const ICON_TEMPLATE = 'https://www.notion.so/icons/%s.svg';
 
     private array $categoryMapping = [
         // Alimentação
@@ -139,9 +140,14 @@ class NotionService
         $categoryId = $this->mapCategoryName($name);
         $paymentName = $paymentNameMapping[$paymentType];
         $paymentId = $creditIdMapping[$bank];
+        $icon = 'circle-remove_red';
 
         if ($paymentType == 'debito') {
             $paymentId = $debitIdMapping[$bank];
+        }
+
+        if ($type == 'Receita') {
+            $icon = 'add_green';
         }
 
         $client = HttpClient::create();
@@ -199,6 +205,12 @@ class NotionService
                         ]
                     ]
                 ],
+                'icon' => [
+                    'type' => 'external',
+                    'external' => [
+                        'url' => sprintf(self::ICON_TEMPLATE, $icon)
+                    ]
+                ]
             ],
         ]);
     }
