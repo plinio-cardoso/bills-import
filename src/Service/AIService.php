@@ -22,6 +22,7 @@ class AIService
             Obs: quando ditado alguma regra ela deve valer para todas linhas sem excessão, as regras serao ditas na primeira linha dos dados, as regras podem ser somente banco, pagas ou nao, credito ou debito,
             podem conter outros inputs mais humanos como recorrencia, etc.
             Obs 2: Remover vírgulas do nome e substituir por espaço
+            Obs 3: Ignorar dados se nos itens existir dados que não foram especificados nas regras/colunas
             
             Dados:
              %s
