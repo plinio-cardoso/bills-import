@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Service\ImportService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,10 +20,6 @@ class HomepageController extends AbstractController
                 'attr' => ['rows' => '10'],
                 'label' => 'Data to be imported:'
             ])
-            ->add('display_ai', CheckboxType::class, [
-                'label' => 'Display AI response',
-                'required' => false,
-            ])
             ->add('save', SubmitType::class, ['label' => 'Import'])
             ->getForm();
 
@@ -32,8 +27,7 @@ class HomepageController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $converter->import(
-                $form->get('content')->getData(),
-                $form->get('display_ai')->getData()
+                $form->get('content')->getData()
             );
 
             // Set a flash message

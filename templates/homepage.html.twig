@@ -3,12 +3,37 @@
 {% block title %}Bills Import{% endblock %}
 
 {% block body %}
-    {# Display flash messages #}
-    {% for message in app.flashes('success') %}
-        <div class="alert alert-success">
-            {{ message }}
-        </div>
-    {% endfor %}
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h2>Bills Import</h2>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>CSV Template:</strong> data,nome,valor,tipo,pago (true ou false),tipo_pagamento (cartao ou debito),banco (itau ou nubank)</li>
+                    <li class="list-group-item"><strong>Example:</strong> 2024-07-01,Supermercado,250.50,Despesa,true,cartao,itau</li>
+                </ul>
 
-    {{ form(form) }}
+                {# Display flash messages #}
+                {% for message in app.flashes('success') %}
+                    <div class="alert alert-success">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+
+                {{ form_start(form, {'attr': {'class': 'mt-4'}}) }}
+
+                <div class="form-group">
+                    {{ form_label(form.content, 'Data to be imported:', {'label_attr': {'class': 'form-label'}}) }}
+                    {{ form_widget(form.content, {'attr': {'class': 'form-control', 'rows': '10'}}) }}
+                </div>
+
+                <div class="form-group mt-3">
+                    {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+                </div>
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -4,24 +4,16 @@ namespace App\Service;
 
 class ImportService
 {
-    private AIService $AIService;
     private NotionService $notionService;
 
-    public function __construct(AIService $AIService, NotionService $notionService)
+    public function __construct(NotionService $notionService)
     {
-        $this->AIService = $AIService;
         $this->notionService = $notionService;
     }
 
-    public function import(string $data, bool $displayAI): void
+    public function import(string $data): void
     {
-        $convertedData = $this->AIService->convertData($data);
-
-        if ($displayAI) {
-            dd($convertedData);
-        }
-
-        $lines = explode("\n", $convertedData);
+        $lines = explode("\r\n", $data);
 
         foreach ($lines as $line) {
             $line = explode(',', $line);
