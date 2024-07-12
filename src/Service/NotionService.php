@@ -230,7 +230,13 @@ class NotionService
             ],
             // Casa
             'f64dfbeb6d55453fad3c9fac917ecde6' => [
-                'Home Assistant'
+                'Home Assistant',
+                'Aluguel',
+                'Sanepar',
+                'Copel',
+                'Edna',
+                'Condomínio',
+                'Vinho'
             ],
             // Entretenimento
             '94b87be263684caca26fa0cafba26194' => [
@@ -243,6 +249,7 @@ class NotionService
             '12b7dd6faeab42d39253a048d4ed5541' => [
                 'Linkedin',
                 'Github',
+                'Contador'
             ],
             // Transporte
             '114a72acbeea4227824a7abc79ae4eaf' => [
@@ -266,13 +273,16 @@ class NotionService
             ],
             // Saúde
             'cc937996354b4e2e91768ba4167fbc5d' => [
+                'Unimed',
                 'FARMACIA',
                 'DROGASIL',
                 'DROGARIA',
                 'RAIA',
+                'Dental',
             ],
             // Lazer
             'c8cab024cdb6476dba12b30396c54ba8' => [
+                'Futebol',
                 'Hotel'
             ],
             // Mercado
