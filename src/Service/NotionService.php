@@ -130,7 +130,9 @@ class NotionService
      */
     private function getProperties(array $item, string $paymentName, string $paymentId, string $categoryId): array
     {
-        return [
+        $paid = filter_var($item[4], FILTER_VALIDATE_BOOLEAN);
+
+        $properties = [
             'Nome' => [
                 'title' => [
                     [
@@ -168,7 +170,7 @@ class NotionService
                 ]
             ],
             'Pago' => [
-                'checkbox' => filter_var($item[4], FILTER_VALIDATE_BOOLEAN)
+                'checkbox' => $paid
             ],
             'Tipo' => [
                 'select' => [
@@ -176,6 +178,12 @@ class NotionService
                 ]
             ]
         ];
+
+        if (!$paid) {
+            unset($properties['Data Pagamento']);
+        }
+
+        return $properties;
     }
 
     /**
