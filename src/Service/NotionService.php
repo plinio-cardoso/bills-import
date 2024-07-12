@@ -176,6 +176,9 @@ class NotionService
                 'select' => [
                     'name' => $item[3]
                 ]
+            ],
+            'Importado' => [
+                'checkbox' => true
             ]
         ];
 
