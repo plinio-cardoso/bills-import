@@ -218,7 +218,14 @@ class NotionService
         return [
             // Alimentação
             'b18d56a5fcdf4d83a1122391f5781c55' => [
-                'IFD BR',
+                'ifd',
+                'Lumberjack',
+                'Top Truck',
+                'Casa de Carnes',
+                'Churrascaria',
+                'Fruttaria',
+                'Gelobel',
+                'Restaurante',
                 'ESPETINHOS',
                 'BODEGA',
                 'GALPAO DA COSTELA',
@@ -265,7 +272,9 @@ class NotionService
             // Transporte
             '114a72acbeea4227824a7abc79ae4eaf' => [
                 'Liberty',
+                'Autozone',
                 'Posto',
+                'Uber',
                 'PRADO MULTIMARCAS',
                 'TIRESHOP',
                 'RENATO AUTO SERVICE'
@@ -285,6 +294,7 @@ class NotionService
             // Saúde
             'cc937996354b4e2e91768ba4167fbc5d' => [
                 'Unimed',
+                'Panvel',
                 'FARMACIA',
                 'DROGASIL',
                 'DROGARIA',
@@ -294,10 +304,12 @@ class NotionService
             // Lazer
             'c8cab024cdb6476dba12b30396c54ba8' => [
                 'Futebol',
+                'Kart',
                 'Hotel'
             ],
             // Mercado
             'b7e6b6d8a86f4768a90d377ac1247885' => [
+                'Cancao Londrina',
                 'MUFFATO',
                 'SUPERMERCADO',
                 'CANCAO LONDRINA'
