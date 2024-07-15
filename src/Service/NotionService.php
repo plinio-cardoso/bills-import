@@ -162,13 +162,13 @@ class NotionService
                     ]
                 ]
             ],
-            $paymentName => [
+            /*$paymentName => [
                 'relation' => [
                     [
                         'id' => $paymentId
                     ]
                 ]
-            ],
+            ],*/
             'Pago' => [
                 'checkbox' => $paid
             ],
